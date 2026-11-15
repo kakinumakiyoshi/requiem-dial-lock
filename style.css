@@ -9,11 +9,11 @@ html,body{height:100%;margin:0}
 body{background:var(--night);color:#e6d8b8;font-family:Georgia,"Times New Roman","Yu Mincho","Hiragino Mincho ProN",serif;-webkit-font-smoothing:antialiased;overflow:hidden;-webkit-tap-highlight-color:transparent}
 
 /* PC など横に広い画面では、左右をぼかした背景で埋める */
-.backdrop{position:fixed;inset:-40px;background:url(assets/lock-book.jpg) center/cover;filter:blur(28px) brightness(.35);z-index:0}
+.backdrop{position:fixed;inset:-40px;background:url(assets/lock-book.jpg?v=3) center/cover;filter:blur(28px) brightness(.35);z-index:0}
 
 /* 舞台：高さ＝画面の高さ、幅＝高さの半分（画像と同じ比率） */
 .stage{position:absolute;top:0;left:50%;height:100vh;height:100svh;aspect-ratio:1/2;transform:translateX(-50%);container-type:size;z-index:1}
-.scene{position:absolute;inset:0;background:url(assets/lock-book.jpg) center/100% 100% no-repeat;box-shadow:0 0 60px #000}
+.scene{position:absolute;inset:0;background:url(assets/lock-book.jpg?v=3) center/100% 100% no-repeat;box-shadow:0 0 60px #000}
 .scene:before{content:"";position:absolute;inset:0;pointer-events:none;background:
   linear-gradient(to bottom,#0a0603b3 0%,#0a060366 16%,#0a060300 27%,#0a060300 57%,#0a060355 64%,#0a0603cc 100%),
   radial-gradient(ellipse at 50% 46%,#0000 35%,#0000008c 100%)}
